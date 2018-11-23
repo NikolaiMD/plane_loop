@@ -1,0 +1,249 @@
+html{
+  height: 100%;
+}
+body{
+  background-image: url(images/sky.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 100%;
+  overflow: hidden;
+}
+#preloader{
+  background-image: url(images/london.svg);
+  background-size: 100%;
+  height: 500px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+#preloader div{
+  position: relative;
+  top: 0;
+  display: block;
+}
+#preloader .plane{
+  background-image: url(images/plane.svg.png);
+  background-size: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 48px;
+  height: 48px;
+  animation: linear 10s plane infinite;
+}
+@keyframes plane{
+  0%  {top: 0; left: 0%;}
+  10% {top: 0; left: 10%;}
+  20% {top: 0; left: 20%;}
+  25% {top: 0; left: 25%;}
+  30% {top: 0; left: 30%; transform: rotate(0);}
+  35% {top: -20px; left: 35%; transform: rotate(-20deg);}
+  40% {top: -40px; left: 37%; transform: rotate(-60deg);}
+  45% {top: -60px; left: 35%; transform: rotate(-90deg);}
+  50% {top: -80px; left: 32%; transform: rotate(-130deg);}
+  55% {top: -100px; left: 29%; transform: rotate(-160deg);}
+  60% {top: -80px; left: 25%; transform: rotate(-220deg);}
+  65% {top: -60px; left: 27%; transform: rotate(-260deg);}
+  70% {top: -40px; left: 28%; transform: rotate(-300deg);}
+  75% {top: -20px; left: 32%; transform: rotate(-320deg);}
+  76% {top: -20px; left: 35%; transform: rotate(-340deg);}
+  77% {top: -15px; left: 37%; transform: rotate(-360deg);}
+  78% {top: -13px; left: 40%; transform: rotate(-360deg);}
+  79% {top: -13px; left: 45%; transform: rotate(-360deg);}
+  80% {top: -10px; left: 50%; transform: rotate(-360deg);}
+  90% {top: 0; left: 80%; transform: rotate(-360deg);}
+  100%{top: 0; left: 100%; transform: rotate(-360deg);}
+}
+#preloader .discharge{
+  opacity: 0;
+}
+/******************************************************************************/
+#preloader .thundercloud_1{
+ position: absolute;
+ top: -100px;
+ right: -10%;
+ animation: linear 5s cloud1 infinite;
+}
+@keyframes cloud1{
+  0%{top: -100px; right: -10%;}
+  50%{top: -100px; right: 50%;}
+  100%{top: -100px; right: 100%;}
+}
+#preloader>.thundercloud_1 .cloud{
+  background-image: url(images/cloud.svg);
+  background-size: 100%;
+  width: 48px;
+  height: 48px;
+}
+#preloader>.thundercloud_1 .discharge{
+  background-image: url(images/discharge.svg);
+  width: 24px;
+  height: 24px;
+  transform: rotate(-20deg);
+  left: 8px;
+  top: -10px;
+  animation: linear 0.2s discharge infinite;
+}
+@keyframes discharge {
+  from{opacity: 0}
+  to{opacity: 1}
+}
+/******************************************************************************/
+#preloader .thundercloud_2{
+  position: absolute;
+  top: -60px;
+  right: -10%;
+  animation: linear 4s cloud2 infinite;
+  animation-delay: 2s;
+}
+@keyframes cloud2{
+  0%{top: -60px; right: -10%;}
+  50%{top: -60px; right: 50%;}
+  100%{top: -60px; right: 100%;}
+}
+#preloader>.thundercloud_2 .cloud{
+  background-image: url(images/cloud.svg);
+  background-size: 100%;
+  width: 48px;
+  height: 48px;
+}
+#preloader>.thundercloud_2 .discharge{
+  background-image: url(images/discharge.svg);
+  width: 24px;
+  height: 24px;
+  transform: rotate(-20deg);
+  left: 8px;
+  top: -10px;
+  animation: linear 0.1s discharge2 infinite;
+}
+@keyframes discharge2 {
+  from{opacity: 0}
+  to{opacity: 1}
+}
+/******************************************************************************/
+#preloader .thundercloud_3{
+  position: absolute;
+  top: -20px;
+  right: -10%;
+  animation: linear 7s cloud3 infinite;
+  animation-delay: 3s;
+}
+@keyframes cloud3{
+  0%{top: -20px; right: -10%;}
+  50%{top: -20px; right: 50%;}
+  100%{top: -20px; right: 100%;}
+}
+#preloader>.thundercloud_3 .cloud{
+  background-image: url(images/cloud.svg);
+  background-size: 100%;
+  width: 48px;
+  height: 48px;
+}
+#preloader>.thundercloud_3 .discharge{
+  background-image: url(images/discharge.svg);
+  width: 24px;
+  height: 24px;
+  transform: rotate(-20deg);
+  left: 8px;
+  top: -10px;
+  animation: linear 0.3s discharge3 infinite;
+}
+@keyframes discharge3 {
+  from{opacity: 0}
+  to{opacity: 1}
+}
+/******************************************************************************/
+#preloader .thundercloud_4{
+  position: absolute;
+  top: 20px;
+  right: -10%;
+  animation: linear 5s cloud4 infinite;
+  animation-delay: 3s;
+}
+@keyframes cloud4{
+  0%{top: 20px; right: -10%;}
+  50%{top: 20px; right: 50%;}
+  100%{top: 20px; right: 100%;}
+}
+#preloader>.thundercloud_4 .cloud{
+  background-image: url(images/cloud.svg);
+  background-size: 100%;
+  width: 48px;
+  height: 48px;
+}
+#preloader>.thundercloud_4 .discharge{
+  background-image: url(images/discharge.svg);
+  width: 24px;
+  height: 24px;
+  transform: rotate(-20deg);
+  left: 8px;
+  top: -10px;
+  animation: linear 0.2s discharge infinite;
+}
+@keyframes discharge {
+  from{opacity: 0}
+  to{opacity: 1}
+}
+/******************************************************************************/
+#preloader .thundercloud_5{
+  position: absolute;
+  top: 60px;
+  right: -10%;
+  animation: linear 8s cloud5 infinite;
+  animation-delay: 1s;
+}
+@keyframes cloud5{
+ 0%{top: 60px; right: -10%;}
+ 50%{top: 60px; right: 50%;}
+ 100%{top: 60px; right: 100%;}
+}
+#preloader>.thundercloud_5 .cloud{
+  background-image: url(images/cloud.svg);
+  background-size: 100%;
+  width: 48px;
+  height: 48px;
+}
+#preloader>.thundercloud_5 .discharge{
+  background-image: url(images/discharge.svg);
+  width: 24px;
+  height: 24px;
+  transform: rotate(-20deg);
+  left: 8px;
+  top: -10px;
+  animation: linear 0.1s discharge2 infinite;
+}
+@keyframes discharge2 {
+  from{opacity: 0}
+  to{opacity: 1}
+}
+/******************************************************************************/
+#preloader .thundercloud_6{
+  position: absolute;
+  top: 100px;
+  right: -10%;
+  animation: linear 10s cloud6 infinite;
+}
+@keyframes cloud6{
+  0%{top: 100px; right: -10%;}
+  50%{top: 100px; right: 50%;}
+  100%{top: 100px; right: 100%;}
+}
+#preloader>.thundercloud_6 .cloud{
+  background-image: url(images/cloud.svg);
+  background-size: 100%;
+  width: 48px;
+  height: 48px;
+}
+#preloader>.thundercloud_6 .discharge{
+  background-image: url(images/discharge.svg);
+  width: 24px;
+  height: 24px;
+  transform: rotate(-20deg);
+  left: 8px;
+  top: -10px;
+  animation: linear 0.3s discharge3 infinite;
+}
+@keyframes discharge3 {
+  from{opacity: 0}
+  to{opacity: 1}
+}
